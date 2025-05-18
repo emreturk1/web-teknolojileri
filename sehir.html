@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Şehrim | Denizli</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/denizli.jpg') center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    .carousel-item img {
+      max-height: 500px;
+      object-fit: cover;
+    }
+    .place-card {
+      transition: transform 0.3s ease;
+    }
+    .place-card:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Web Sitem</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+          <li class="nav-item"><a class="nav-link active" href="sehir.html">Şehrim</a></li>
+          <li class="nav-item"><a class="nav-link" href="miras.html">Mirasımız</a></li>
+          <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Giriş</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <h1 class="display-4 fw-bold">Denizli</h1>
+    <p class="lead">Denizli, Türkiye'nin bir ilidir. Merkezi Denizli olan ilin nüfusu 2023 sonu verilerine göre 1.059.082'dir. Tekstil sanayi, metal, gıda ürünleri ve yöreye özgü Denizli horozu ile meşhurdur. Anadolu Yarımadası'nın güneybatı, Ege Bölgesi'nin güneydoğusunda yer alır.</p>
+  </section>
+
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Gezilecek Yerler</h2>
+    <div id="slider" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="pamukkale.html">
+            <img src="../img/pamukkale-travertenleri.jpg" class="d-block w-100" alt="Pamukkale">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="forumcamlik.html">
+            <img src="../img/Multi-Turkey_Forum-Camlik_Featured_1.jpg" class="d-block w-100" alt="forumcamlik">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="acipayamkanyonu.html">
+            <img src="../img/gazetesehir-acipayam-kanyonu-1.webp" class="d-block w-100" alt="acipayamkanyonu">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="denizlimanzara.html">
+            <img src="../img/5fb0ea925cf3b01b4028008a.webp" class="d-block w-100" alt="Denizli Manzarası">
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Önceki</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sonraki</span>
+      </button>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm place-card">
+          <img src="../img/pamukkale-turkey-wallpaper-preview.jpg" class="card-img-top" alt="Pamukkale">
+          <div class="card-body">
+            <h5 class="card-title">Pamukkale</h5>
+            <p class="card-text">UNESCO Dünya Mirası Listesi'nde yer alan Pamukkale, travertenleri ve sıcak su kaynaklarıyla ünlüdür.</p>
+            <a href="pamukkale.html" class="btn btn-outline-primary btn-sm">Detay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm place-card">
+          <img src="../img/Multi-Turkey_Forum-Camlik_Featured_1.jpg" class="card-img-top" alt="Kaleiçi">
+          <div class="card-body">
+            <h5 class="card-title">Forum Çamlık</h5>
+            <p class="card-text">Tarihi sokakları ve Osmanlı mimarisiyle Denizli'nin nostaljik yüzünü sunar.</p>
+            <a href="forumcamlik.html" class="btn btn-outline-primary btn-sm">Detay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm place-card">
+          <img src="../img/thumbs_b_c_8218c139254b9973302f01cd1bf5e870.jpg" class="card-img-top" alt="Uzungöl">
+          <div class="card-body">
+            <h5 class="card-title">Acıpayam Kanyonu</h5>
+            <p class="card-text">Doğayla iç içe vakit geçirmek isteyenler için saklı bir cennet.</p>
+            <a href="acipayamkanyonu.html" class="btn btn-outline-primary btn-sm">Detay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
