@@ -1,7 +1,6 @@
-// js/api.js
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 🎬 FILMLER - TMDB
+
   fetch("https://api.themoviedb.org/3/movie/popular?api_key=f4a3bb0152279aeeb50fe32fffd3d9fb&language=tr-TR&page=1")
     .then(response => response.json())
     .then(data => {
@@ -22,7 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error("Film verisi çekilemedi:", error));
 
-  // 🎮 OYUNLAR - RAWG
+
+
+
   fetch("https://api.rawg.io/api/games?key=30efd1ec27b6456ab2857299493a8b30&page_size=6")
     .then(response => response.json())
     .then(data => {
@@ -43,7 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error("Oyun verisi çekilemedi:", error));
 
-  // 🐶 KOPEKLER - The Dog API
+
+
   fetch("https://api.thedogapi.com/v1/images/search?limit=6")
     .then(response => response.json())
     .then(data => {
